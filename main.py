@@ -5,7 +5,7 @@ import uvicorn
 
 from post.route import post_route
 
-app.include_router(post_route, prefix="/api/user",tags=["user"])
+app.include_router(post_route, prefix="/api/post", tags=["post"])
 
 
 @app.get("/")
